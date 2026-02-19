@@ -1,14 +1,18 @@
-# Urban Mobility Initiative
+# Salesforce DX Project: Next Steps
 
-Salesforce Admin project focused on designing and implementing a structured Urban Mobility Management System.
+Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-Inspired by a real urban mobility case study from the McKinsey.org Forward 2025 program.
+## How Do You Plan to Deploy Your Changes?
 
-## Scope
-- Custom Data Model
-- Lifecycle Tracking
-- Validation Rules
-- Automation (Flows)
-- Reports & Dashboards
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-This project is being built with a structured system design approach and version-controlled using Git.
+## Configure Your Salesforce DX Project
+
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+
+## Read All About It
+
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
