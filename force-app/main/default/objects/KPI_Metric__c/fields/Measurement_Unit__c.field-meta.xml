@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Measurement_Unit__c</fullName>
+    <label>Measurement Unit</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Minutes</fullName>
+                <default>false</default>
+                <label>Minutes</label>
+            </value>
+            <value>
+                <fullName>Percentage</fullName>
+                <default>false</default>
+                <label>Percentage</label>
+            </value>
+            <value>
+                <fullName>Count</fullName>
+                <default>false</default>
+                <label>Count</label>
+            </value>
+            <value>
+                <fullName>Score</fullName>
+                <default>false</default>
+                <label>Score</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPI_Category__c</fullName>
+    <label>KPI Category</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Time</fullName>
+                <default>false</default>
+                <label>Time</label>
+            </value>
+            <value>
+                <fullName>Safety</fullName>
+                <default>false</default>
+                <label>Safety</label>
+            </value>
+            <value>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+                <label>Adoption</label>
+            </value>
+            <value>
+                <fullName>Cost</fullName>
+                <default>false</default>
+                <label>Cost</label>
+            </value>
+            <value>
+                <fullName>Satisfaction</fullName>
+                <default>false</default>
+                <label>Satisfaction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

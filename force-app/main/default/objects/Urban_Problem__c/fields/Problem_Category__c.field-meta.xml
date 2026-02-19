@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Problem_Category__c</fullName>
+    <label>Problem Category</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Congestion</fullName>
+                <default>false</default>
+                <label>Congestion</label>
+            </value>
+            <value>
+                <fullName>Safety</fullName>
+                <default>false</default>
+                <label>Safety</label>
+            </value>
+            <value>
+                <fullName>Public Transport</fullName>
+                <default>false</default>
+                <label>Public Transport</label>
+            </value>
+            <value>
+                <fullName>Infrastructure</fullName>
+                <default>false</default>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
