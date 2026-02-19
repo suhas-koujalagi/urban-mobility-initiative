@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Planning_Submitting_For_Approval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Approval_Status__c, &quot;Pending Approval&quot;),
+  OR(
+    ISBLANK(Planned_Start_Date__c),
+    ISBLANK(Planned_End_Date__c),
+    ISBLANK(Initiative_Owner__c)
+  )
+)</errorConditionFormula>
+    <errorMessage>Provide planned dates and assign an Initiative Owner before submitting for approval</errorMessage>
+</ValidationRule>

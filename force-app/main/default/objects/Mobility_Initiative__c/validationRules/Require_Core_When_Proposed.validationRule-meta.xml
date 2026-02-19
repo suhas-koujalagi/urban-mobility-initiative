@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Core_When_Proposed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Initiative_Status__c, &quot;Proposed&quot;),
+  OR(
+    ISBLANK(Initiative_Title__c),
+    ISPICKVAL(Priority_Level__c, &quot;&quot;),
+    ISBLANK(Owning_Department__c)
+  )
+)</errorConditionFormula>
+    <errorMessage>To propose an initiative, add Priority, Owning Department, and a clear title.</errorMessage>
+</ValidationRule>

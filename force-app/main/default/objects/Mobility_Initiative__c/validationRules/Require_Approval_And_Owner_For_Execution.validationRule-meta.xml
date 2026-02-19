@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Approval_And_Owner_For_Execution</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Initiative_Status__c, &quot;In Execution&quot;),
+  OR(
+    NOT(ISPICKVAL(Approval_Status__c, &quot;Approved&quot;)),
+    ISBLANK(Initiative_Owner__c)
+  )
+)</errorConditionFormula>
+    <errorMessage>Only approved initiatives with an assigned owner can move to execution.</errorMessage>
+</ValidationRule>
