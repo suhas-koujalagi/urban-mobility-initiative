@@ -8,7 +8,7 @@ The system provides structured tracking for initiative planning, funding allocat
 
 The solution design is inspired by an urban mobility ***case study from the McKinsey.org Forward 2025 program.***
 
-The current implementation is built using **Salesforce’s declarative capabilities (data modeling, automation, validation rules, reporting, dashboards, and UI configuration).** The system architecture is designed to be extended through a **development layer, including Lightning Web Components and advanced customization.**
+The current implementation is built using Salesforce’s declarative capabilities (data modeling, automation, validation rules, reporting, dashboards, and UI configuration). The system architecture is designed to be extended through a development layer, including Lightning Web Components and advanced customization.
 
 ## 2. System Architecture
 
