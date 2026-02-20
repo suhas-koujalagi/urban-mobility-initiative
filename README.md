@@ -13,7 +13,7 @@ The current implementation is built using Salesforce’s declarative capabilitie
 The system follows a centralized governance model where **Mobility Initiative** acts as the core operational entity. Each initiative is owned by a Department (Account) and serves as the anchor point for funding, performance tracking, citizen engagement, and governance review.
 
 ### Architecture Overview 
-`
+```
                          ┌────────────────────────┐
                          │     City Leadership    │
                          │ (Dashboards & Reports) │
@@ -44,7 +44,7 @@ The system follows a centralized governance model where **Mobility Initiative** 
                                                    │ Member       │  │ Log (Audit)  │
                                                    │ (Responses)  │  └──────────────┘
                                                    └──────────────┘
-`
+```
 
 ## 3. System Implementation (Declarative Layer)
 
@@ -107,7 +107,7 @@ Initial data setup and structured record loading were performed using Salesforce
 
 The Urban Mobility Management Lightning Application centralizes initiative tracking, governance reviews, funding visibility, KPI monitoring, and campaign-based feedback collection within a structured navigation model.
 
-![Application Overview](docs/screenshots/app-overview.png)
+<p align="center"> <img src="docs/screenshots/app-overview.png" width="750"> </p>
 
 ---
 
@@ -115,9 +115,7 @@ The Urban Mobility Management Lightning Application centralizes initiative track
 
 Dashboards provide consolidated analytical views across funding, lifecycle distribution, KPI performance, and departmental initiative load. Multiple chart types are used to present structured breakdowns for operational and leadership monitoring.
 
-![Initiative Performance Dashboard](docs/screenshots/dashboard-initiative-performance.png)
-
-![Governance Overview Dashboard](docs/screenshots/dashboard-governance-overview.png)
+<div align="center"> <img src="docs/screenshots/dashboard-initiative-performance.png" width="360" style="margin-right: 20px;"> <img src="docs/screenshots/dashboard-governance-overview.png" width="360"> </div>
 
 ---
 
@@ -125,7 +123,7 @@ Dashboards provide consolidated analytical views across funding, lifecycle distr
 
 Structured reports support budget analysis, KPI tracking, lifecycle monitoring, and audit-level governance visibility.
 
-![KPI Performance Report](docs/screenshots/report-kpi-performance.png)
+<p align="center"> <img src="docs/screenshots/report-kpi-performance.png" width="700"> </p>
 
 ## 5. Project Evolution
 
