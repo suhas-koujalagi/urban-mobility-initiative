@@ -97,7 +97,7 @@ Custom reports provide structured analytical views including:
 - Review decision history
 - Adjustment audit records
 
-Dashboards consolidate these reports using multiple visualization types such as `donut charts`, `vertical bar charts`, `horizontal graphs`, `matrix reports`, and `tabular views`. These dashboards provide clear **distribution of initiative load, total allocated budgets, KPI status breakdown, and `governance activity trends.**
+Dashboards consolidate these reports using multiple visualization types such as `donut charts`, `vertical bar charts`, `horizontal graphs`, `matrix reports`, and `tabular views`. These dashboards provide clear **distribution of initiative load, total allocated budgets, KPI status breakdown, and governance activity trends.**
 
 ### Data Management
 
@@ -125,7 +125,7 @@ Structured reports support budget analysis, KPI tracking, lifecycle monitoring, 
 
 ## 5. Development & Application Extensions
 
-**Note:** ***This section will expand as development components are introduced.***
+**⚠️Note:** This section will expand as development components are introduced.
 
 The development layer extends the existing declarative foundation through deeper application customization, advanced process handling, structured approval mechanisms, and enhanced user interaction where required.
 
