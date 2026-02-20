@@ -120,7 +120,7 @@ Dashboards provide consolidated analytical views across funding, lifecycle distr
 ### Sample Analytical Report
 
 Structured reports support budget analysis, KPI tracking, lifecycle monitoring, and audit-level governance visibility.
-s
+
 <div align="center"> <img src="docs/screenshots/report-kpi-performance.png" width="350" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
 ## 5. Development & Application Extensions
