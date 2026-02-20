@@ -1,18 +1,134 @@
-# Salesforce DX Project: Next Steps
+# Urban Mobility Initiative Management System
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## 1. Overview
 
-## How Do You Plan to Deploy Your Changes?
+The Urban Mobility Initiative Management System is a Salesforce-based governance and execution tracking platform designed to manage city-level mobility initiatives from problem identification to measurable outcome evaluation.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+The system provides structured tracking for initiative planning, funding allocation, KPI monitoring, citizen feedback campaigns, review decisions, and controlled adjustments within a unified Lightning application.
 
-## Configure Your Salesforce DX Project
+The current implementation is built using Salesforce’s declarative capabilities (data modeling, automation, validation rules, reporting, dashboards, and UI configuration). The system architecture is designed to be extended through a development layer, including Lightning Web Components and advanced customization.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## 2. System Architecture
 
-## Read All About It
+The system follows a centralized governance model where **Mobility Initiative** acts as the core operational entity. Each initiative is owned by a Department (Account) and serves as the anchor point for funding, performance tracking, citizen engagement, and governance review.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### Architecture Overview 
+`
+                         ┌────────────────────────┐
+                         │     City Leadership    │
+                         │ (Dashboards & Reports) │
+                         └──────────────▲─────────┘
+                                        │
+                                   KPIs / Insights
+                                        │
+                         ┌────────────────────────┐
+                         │     Department         │
+                         │      (Account)         │
+                         └──────────────▲─────────┘
+                                        │
+                         ┌────────────────────────┐
+                         │  Mobility Initiative   │
+                         │         (CORE)         │
+                         └──────────────▲─────────┘
+                                        │
+        ┌───────────────┬──────────────┼───────────────┬───────────────┐
+        │               │              │               │               │
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│ Urban        │ │ Budget       │ │ KPI Metrics  │ │ Campaign     │ │ Reviews &    │
+│ Problem      │ │ Allocation   │ │              │ │              │ │ Decisions    │
+│ (WHY)        │ │ (Funding)    │ │ (Performance)│ │ (Feedback)   │ │ (Governance) │
+└──────────────┘ └──────────────┘ └──────────────┘ └──────▲───────┘ └──────▲───────┘
+                                                           │                │
+                                                   ┌──────────────┐  ┌──────────────┐
+                                                   │ Campaign     │  │ Adjustment   │
+                                                   │ Member       │  │ Log (Audit)  │
+                                                   │ (Responses)  │  └──────────────┘
+                                                   └──────────────┘
+`
+
+## 3. System Implementation (Declarative Layer)
+
+The current implementation is built using Salesforce declarative configuration, combining structured data modeling, validation controls, automation, reporting, and dashboard analytics.
+
+### Data Model
+
+The system is centered on the Mobility Initiative object. Each initiative:
+
+- Is owned by a Department (Account)
+- Is linked to an Urban Problem
+- Tracks Budget Allocations
+- Tracks KPI Metrics
+- Supports Reviews & Decisions
+- Maintains Adjustment Logs for review actions
+- Connects to Campaigns for structured feedback collection
+
+All relationships are implemented using Lookup fields to maintain flexibility while preserving linkage between planning, funding, execution, and review components.
+
+### Validation Controls
+
+Validation rules enforce required data before lifecycle transitions. These controls ensure:
+
+- Mandatory planning data is captured at proposal stage
+- Required approval attributes are present before execution
+- Status progression aligns with defined governance checkpoints
+
+### Automation
+
+Record-triggered flows manage:
+
+- Lifecycle status transitions
+- Blocking execution when budget is missing
+- Blocking review when KPI metrics are not defined
+- Automatic feedback campaign creation during review cycles
+- Ownership reassignment based on lifecycle stage
+
+Automation ensures consistent operational behavior across initiative records.
+
+### Reporting & Dashboards
+
+Custom reports provide structured analytical views including:
+
+- Budget allocation by initiative
+- Department-wise initiative load
+- KPI performance tracking
+- Initiative lifecycle status distribution
+- Review decision history
+- Adjustment audit records
+
+Dashboards consolidate these reports using multiple visualization types such as donut charts, vertical bar charts, horizontal graphs, matrix reports, and tabular views. These dashboards provide clear distribution of initiative load, total allocated budgets, KPI status breakdown, and governance activity trends.
+
+### Data Management
+
+Initial data setup and structured record loading were performed using Salesforce Data Loader and the Data Import Wizard to support testing, reporting validation, and dashboard verification.
+
+## 4. System Preview
+
+### Application Overview
+
+The Urban Mobility Management Lightning Application centralizes initiative tracking, governance reviews, funding visibility, KPI monitoring, and campaign-based feedback collection within a structured navigation model.
+
+![Application Overview](docs/screenshots/app-overview.png)
+
+---
+
+### Executive & Governance Dashboards
+
+Dashboards provide consolidated analytical views across funding, lifecycle distribution, KPI performance, and departmental initiative load. Multiple chart types are used to present structured breakdowns for operational and leadership monitoring.
+
+![Initiative Performance Dashboard](docs/screenshots/dashboard-initiative-performance.png)
+
+![Governance Overview Dashboard](docs/screenshots/dashboard-governance-overview.png)
+
+---
+
+### Sample Analytical Report
+
+Structured reports support budget analysis, KPI tracking, lifecycle monitoring, and audit-level governance visibility.
+
+![KPI Performance Report](docs/screenshots/report-kpi-performance.png)
+
+## 5. Project Evolution
+
+The current implementation establishes a structured declarative foundation for governance-driven initiative management.
+
+The architecture is intentionally designed to support future enhancements, including advanced automation, approval processes, and programmatic extensions through Salesforce development components.
