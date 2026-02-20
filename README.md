@@ -6,6 +6,8 @@ The Urban Mobility Initiative Management System is a Salesforce-based governance
 
 The system provides structured tracking for initiative planning, funding allocation, KPI monitoring, citizen feedback campaigns, review decisions, and controlled adjustments within a unified Lightning application.
 
+The solution design is inspired by an urban mobility case study from the McKinsey.org Forward 2025 program.
+
 The current implementation is built using Salesforce’s declarative capabilities (data modeling, automation, validation rules, reporting, dashboards, and UI configuration). The system architecture is designed to be extended through a development layer, including Lightning Web Components and advanced customization.
 
 ## 2. System Architecture
@@ -107,9 +109,7 @@ Initial data setup and structured record loading were performed using Salesforce
 
 The Urban Mobility Management Lightning Application centralizes initiative tracking, governance reviews, funding visibility, KPI monitoring, and campaign-based feedback collection within a structured navigation model.
 
-<div align="center"> <img src="docs/screenshots/app-overview.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
-
----
+<div align="center"> <img src="docs/screenshots/app-overview.png" width="350" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
 ### Executive & Governance Dashboards
 
@@ -117,16 +117,16 @@ Dashboards provide consolidated analytical views across funding, lifecycle distr
 
 <div align="center"> <img src="docs/screenshots/dashboard-initiative-performance.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px; margin-right:15px;"> <img src="docs/screenshots/dashboard-governance-overview.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
----
-
 ### Sample Analytical Report
 
 Structured reports support budget analysis, KPI tracking, lifecycle monitoring, and audit-level governance visibility.
+s
+<div align="center"> <img src="docs/screenshots/report-kpi-performance.png" width="350" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
-<div align="center"> <img src="docs/screenshots/report-kpi-performance.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
+## 5. Development & Application Extensions
 
-## 5. Project Evolution
+<p style="color:#d9534f;"><strong>Note:</strong> This section will expand as development components are introduced.</p>
 
-The current implementation establishes a structured declarative foundation for governance-driven initiative management.
+The development layer extends the existing declarative foundation through deeper application customization, advanced process handling, structured approval mechanisms, and enhanced user interaction where required.
 
-The architecture is intentionally designed to support future enhancements, including advanced automation, approval processes, and programmatic extensions through Salesforce development components.
+Future additions in this section will focus on extending system capability beyond configuration-level controls while maintaining architectural consistency with the existing implementation.
