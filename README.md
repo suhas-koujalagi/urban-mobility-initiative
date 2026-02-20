@@ -107,7 +107,7 @@ Initial data setup and structured record loading were performed using Salesforce
 
 The Urban Mobility Management Lightning Application centralizes initiative tracking, governance reviews, funding visibility, KPI monitoring, and campaign-based feedback collection within a structured navigation model.
 
-<div align="center"> <img src="docs/screenshots/app-overview.png" width="700" style="border:1px solid #e5e7eb; border-radius:10px; padding:6px; box-shadow:0 4px 12px rgba(0,0,0,0.08);"> </div>
+<div align="center"> <img src="docs/screenshots/app-overview.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
 ---
 
@@ -115,7 +115,7 @@ The Urban Mobility Management Lightning Application centralizes initiative track
 
 Dashboards provide consolidated analytical views across funding, lifecycle distribution, KPI performance, and departmental initiative load. Multiple chart types are used to present structured breakdowns for operational and leadership monitoring.
 
-<div align="center"> <img src="docs/screenshots/dashboard-initiative-performance.png" width="700" style="border:1px solid #e5e7eb; border-radius:10px; padding:6px; box-shadow:0 4px 12px rgba(0,0,0,0.08);"> </div>
+<div align="center"> <img src="docs/screenshots/dashboard-initiative-performance.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px; margin-right:15px;"> <img src="docs/screenshots/dashboard-governance-overview.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
 ---
 
@@ -123,7 +123,7 @@ Dashboards provide consolidated analytical views across funding, lifecycle distr
 
 Structured reports support budget analysis, KPI tracking, lifecycle monitoring, and audit-level governance visibility.
 
-<div align="center"> <img src="docs/screenshots/report-kpi-performance.png" width="700" style="border:1px solid #e5e7eb; border-radius:10px; padding:6px; box-shadow:0 4px 12px rgba(0,0,0,0.08);"> </div>
+<div align="center"> <img src="docs/screenshots/report-kpi-performance.png" width="300" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
 ## 5. Project Evolution
 
