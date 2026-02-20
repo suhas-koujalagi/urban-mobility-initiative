@@ -6,9 +6,9 @@ The Urban Mobility Initiative Management System is a Salesforce-based governance
 
 The system provides structured tracking for initiative planning, funding allocation, KPI monitoring, citizen feedback campaigns, review decisions, and controlled adjustments within a unified Lightning application.
 
-The solution design is inspired by an urban mobility case study from the McKinsey.org Forward 2025 program.
+The solution design is inspired by an urban mobility `case study from the McKinsey.org Forward 2025 program.`
 
-The current implementation is built using Salesforce’s declarative capabilities (data modeling, automation, validation rules, reporting, dashboards, and UI configuration). The system architecture is designed to be extended through a development layer, including Lightning Web Components and advanced customization.
+The current implementation is built using `Salesforce’s declarative capabilities` (`data modeling`, `automation`, `validation rules`, `reporting`, `dashboards`, and `UI configuration`). The system architecture is designed to be extended through a `development layer`, including `Lightning Web Components` and advanced customization.
 
 ## 2. System Architecture
 
@@ -97,7 +97,7 @@ Custom reports provide structured analytical views including:
 - Review decision history
 - Adjustment audit records
 
-Dashboards consolidate these reports using multiple visualization types such as donut charts, vertical bar charts, horizontal graphs, matrix reports, and tabular views. These dashboards provide clear distribution of initiative load, total allocated budgets, KPI status breakdown, and governance activity trends.
+Dashboards consolidate these reports using multiple visualization types such as `donut charts`, `vertical bar charts`, `horizontal graphs`, `matrix reports`, and `tabular views`. These dashboards provide clear `distribution of initiative load`, `total allocated budgets`, `KPI status breakdown`, and `governance activity trends`.
 
 ### Data Management
 
@@ -124,9 +124,9 @@ Structured reports support budget analysis, KPI tracking, lifecycle monitoring, 
 <div align="center"> <img src="docs/screenshots/report-kpi-performance.png" width="350" style="border:1px solid #d1d5db; border-radius:8px; padding:4px;"> </div>
 
 ## 5. Development & Application Extensions
-
-<p style="color:#d9534f;"><strong>Note:</strong> This section will expand as development components are introduced.</p>
-
+`
+<p><strong>Note:</strong> *This section will expand as development components are introduced.*</p>
+`
 The development layer extends the existing declarative foundation through deeper application customization, advanced process handling, structured approval mechanisms, and enhanced user interaction where required.
 
 Future additions in this section will focus on extending system capability beyond configuration-level controls while maintaining architectural consistency with the existing implementation.
